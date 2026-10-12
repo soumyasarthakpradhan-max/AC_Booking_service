@@ -29,32 +29,27 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-        <div className="navbar-container">
-          <a href="#" className="navbar-logo" onClick={(e) => handleNavClick(e, "hero")}>
-            <span className="navbar-logo-icon">❄️</span>
-            CoolCare
+    <nav className="bg-blue-600 text-white px-6 py-4">
+
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
+
+        <h1 className="text-2xl font-bold">
+          ❄️ CoolCare
+        </h1>
+
+        <div className="flex gap-6">
+          <a href="#" className="hover:text-blue-200">
+            Home
           </a>
 
-          <div className="navbar-links">
-            {links.map((link) => (
-              <a
-                key={link.target}
-                href={`#${link.target}`}
-                className="navbar-link"
-                onClick={(e) => handleNavClick(e, link.target)}
-              >
-                {link.label}
-              </a>
-            ))}
-            <a
-              href="#booking"
-              className="navbar-cta"
-              onClick={(e) => handleNavClick(e, "booking")}
-            >
-              Book Now
-            </a>
-          </div>
+          <a href="#" className="hover:text-blue-200">
+            Services
+          </a>
+
+          <a href="#" className="hover:text-blue-200">
+            Book Service
+          </a>
+        </div>
 
           <button
             className="navbar-toggle"
@@ -72,7 +67,7 @@ function Navbar() {
           onClick={() => setMobileOpen(false)}
           aria-label="Close menu"
         >
-          ✕
+          
         </button>
         {links.map((link) => (
           <a

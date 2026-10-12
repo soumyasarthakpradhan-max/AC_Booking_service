@@ -19,6 +19,7 @@ function Bookinglist() {
   useEffect(() => {
     fetchBookings();
   }, []);
+  
 
   // Expose refresh function via a callback
   // (called from App when a new booking is added)

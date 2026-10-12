@@ -19,6 +19,7 @@ function Footer() {
           <a href="#booking" className="footer-link">Book</a>
           <a href="#bookings" className="footer-link">Bookings</a>
         </div>
+        
       </div>
     </footer>
   );

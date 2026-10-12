@@ -53,6 +53,7 @@ function Bookingform({ onBookingSuccess }) {
       [e.target.name]: e.target.value,
     });
   };
+  
 
   const selectAcType = (value) => {
     setFormData({ ...formData, acType: value });
