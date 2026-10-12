@@ -19,6 +19,7 @@ function Bookinglist() {
 
     fetchBookings();
   }, []);
+  
 
   return (
     <div className="bg-gray-100 min-h-screen py-10">
